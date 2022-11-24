@@ -49,4 +49,11 @@ h4 {
 @media (max-width: 991px) {
     .header-area {
         text-align: center;
+    }
+    .header-area .navbar-toggler {
+        box-shadow: none;
+    }
+    .header-area .nav-link {
+        padding: 15px 0;
+    }
 }
