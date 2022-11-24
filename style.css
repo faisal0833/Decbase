@@ -22,6 +22,34 @@ h4 {
     font-weight: 500;
     color: #212121;
 }
+.theme-button {
+    text-decoration: none;
+    background-color: #37806b;
+    color: #ffffff;
+    border-radius: 15px 0;
+    padding: 10px 20px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.theme-button:hover {
+    background-color: #CAA892;
+    color: #ffffff;
+}
+.design-image {
+    position: relative;
+    z-index: 1;
+}
+.design-image::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 30px;
+    top: 30px;
+    z-index: -1;
+    border-radius: 140px 0;
+    border: 2px solid #CAA892;
+}
 
 /* Header Area CSS */
 .header-area {
@@ -62,6 +90,38 @@ h4 {
     }
     .header-area .nav-item:last-child {
         margin-left: 0;
+    }
+}
+
+/* Hero Area CSS */
+.hero-area {
+    padding: 70px 0;
+}
+.hero-text h3 {
+    font-size: 20px;
+    color: #646464;
+}
+.hero-text h2 {
+    font-size: 68px;
+    color: #212121;
+}
+.hero-text a {
+    margin-top: 15px;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 140px 0;
+}
+
+@media (max-width: 991px) {
+    .hero-area {
+        text-align: center;
+    }
+    .hero-area h2 {
+        font-size: 48px;
+    }
+    .hero-image {
+        margin-top: 40px;
     }
 }
 
