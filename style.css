@@ -44,8 +44,8 @@ h4 {
     content: "";
     height: 100%;
     width: 100%;
-    left: 30px;
-    top: 30px;
+    left: 20px;
+    top: 20px;
     z-index: -1;
     border-radius: 140px 0;
     border: 2px solid #CAA892;
@@ -122,6 +122,9 @@ h4 {
     }
     .hero-image {
         margin-top: 40px;
+    }
+    .hero-image {
+        margin-right: 20px;
     }
 }
 
