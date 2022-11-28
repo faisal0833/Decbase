@@ -4,7 +4,7 @@ font-family: 'Poppins', sans-serif;
 */
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap');
 
 /* basic CSS */
 body {
@@ -39,6 +39,9 @@ h4 {
     position: relative;
     z-index: 1;
 }
+.design-image img {
+    border-radius: 140px 0;
+}
 .design-image::after {
     position: absolute;
     content: "";
@@ -53,6 +56,9 @@ h4 {
 .design-image-two {
     position: relative;
     z-index: 1;
+}
+.design-image-two img {
+    border-radius: 140px 0;
 }
 .design-image-two::after {
     position: absolute;
@@ -73,6 +79,15 @@ h4 {
 }
 .section-heading h3 {
     font-size: 48px;
+}
+.design-text h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 288px;
+    font-weight: 700;
+    background-image: url(assets/img/text-bg.png);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
 }
 
 /* Header Area CSS */
@@ -266,6 +281,31 @@ h4 {
     }
     .design img {
         height: 80px;
+    }
+}
+
+/* Success Area CSS */
+.success-area {
+    padding: 100px 0;
+    position: relative;
+}
+.success-area .theme-button {
+    margin-top: 35px;
+}
+
+@media (max-width: 991px) {
+    .success-area {
+        text-align: center;
+        padding-top: 0;
+    }
+    .success-text h3 {
+        font-size: 40px;
+    }
+    .success-text .theme-button {
+        margin-bottom: 50px;
+    }
+    .success-image {
+        margin-right: 20px;
     }
 }
 
