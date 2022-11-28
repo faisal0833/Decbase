@@ -88,6 +88,129 @@
             </div>
         </section>
         <!-- Hero Area End -->
+
+        <!-- Service Area Start -->
+        <section class="service-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="section-heading">
+                            <h4>WHAT WE DO</h4>
+                            <h3>Our Service</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="all-services owl-carousel">
+                            <div class="single-service-area px-3 py-4">
+                                <div class="single-service d-flex">
+                                    <div class="service-image me-4">
+                                        <img src="assets/img/s-one.png" alt="">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Interior Design</h3>
+                                        <p>
+                                            Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-service-area px-3 py-4">
+                                <div class="single-service d-flex">
+                                    <div class="service-image me-4">
+                                        <img src="assets/img/s-three.png" alt="">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Architecture</h3>
+                                        <p>
+                                            Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-service-area px-3 py-4">
+                                <div class="single-service d-flex">
+                                    <div class="service-image me-4">
+                                        <img src="assets/img/s-one.png" alt="">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Planning</h3>
+                                        <p>
+                                            Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-service-area px-3 py-4">
+                                <div class="single-service d-flex">
+                                    <div class="service-image me-4">
+                                        <img src="assets/img/s-three.png" alt="">
+                                    </div>
+                                    <div class="service-text">
+                                        <h3>Interior Design</h3>
+                                        <p>
+                                            Lorem ipsum dolor amet consectetur
+                                            adipiscing elit sed eiusmod tempor
+                                            incididunt ut labore.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="design">
+                <img src="assets/img/group.png" alt="">
+            </div>
+        </section>
+        <!-- Service Area End -->
+
+        <!-- About Area Start -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-image design-image-two">
+                            <img class="w-100" src="assets/img/about-image.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="about-text">
+                            <div class="section-heading">
+                                <h4>ABOUT US</h4>
+                                <h3>
+                                    Interioris The Will
+                                    of An Epoch Mextreo
+                                </h3>
+                                <p>
+                                    There are many variations of passages of Lorem Ipsum available,
+                                    but the majority have suffered alteration in some form injected
+                                    humour, or randomised words which don't look even slightly
+                                    believable.If you are going to use a passage of Lorem Ipsum,
+                                    sure there isn't anything embarrassing hidden the middleof text.
+                                    All the Lorem Ipsum generators on the Internettend to repeat
+                                    predefined chunks as necessary,making this the first true
+                                    generator on the Internet.
+                                </p>
+                                <a href="#" class="theme-button">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="design">
+                <img src="assets/img/group.png" alt="">
+            </div>
+        </section>
+        <!-- About Area End -->
     </main>
     <!-- Main Area End -->
 
@@ -186,7 +309,27 @@
     <!-- Scripts -->
     <script>
         $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
+            $('.all-services').owlCarousel({
+                loop: true,
+                margin: 2,
+                responsiveClass: true,
+                nav: true,
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1,
+                        nav:false,
+                        dots:true,
+                    },
+                    600:{
+                        items:1,
+                        dots:true,
+                    },
+                    1000:{
+                        items:3,
+                    },
+                },
+            });
         });
     </script>
   </body>
