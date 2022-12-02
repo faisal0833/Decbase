@@ -155,6 +155,7 @@ h4 {
 @media (max-width: 991px) {
     .hero-area {
         text-align: center;
+        padding: 40px;
     }
     .hero-area h2 {
         font-size: 48px;
@@ -222,17 +223,17 @@ h4 {
         text-align: center;
         padding: 60px 0;
     }
-    .all-services{
+    .all-services {
         margin-top: 10px;
     }
-    .service-area .owl-dots button{
+    .service-area .owl-dots button {
         height: 15px;
         width: 15px;
         background-color: #B0855B;
         border-radius: 50%;
         margin-left: 15px;
     }
-    .service-area .owl-dots button.active{
+    .service-area .owl-dots button.active {
         background-color: #37806b;
     }
     .design {
@@ -385,6 +386,7 @@ h4 {
 @media (max-width: 991px) {
     .work-area {
         text-align: center;
+        padding: 50px;
     }
     .work-area .section-heading h3 {
         font-size: 38px;
@@ -406,6 +408,122 @@ h4 {
         border-top: none;
         border-left: none;
     }
+}
+
+/* Testimonial Area CSS */
+.testimonial-area {
+    padding: 100px 0;
+    position: relative;
+}
+.all-testimonial {
+    margin-top: 70px;
+    position: relative;
+}
+.single-testimonial {
+    padding: 20px;
+}
+.testimonial-content {
+    display: flex;
+    padding: 40px;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-content::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 65px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+    z-index: -1;
+}
+.testimonial-img {
+    margin-right: 20px;
+}
+.testimonial-img img {
+    width: 130px !important;
+    height: 130px;
+}
+.testimonial-text h3 {
+    font-size: 22px;
+}
+.testimonial-text h3 span {
+    font-size: 16px;
+    color: #646464;
+}
+.icon-img {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.icon-img img {
+    width: 25px;
+    height: auto;
+}
+.testimonial-area .owl-nav {
+    position: absolute;
+    right: 0;
+    top: -80px;
+}
+.testimonial-area .owl-nav span {
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    color: #646464;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.testimonial-area .owl-nav span:hover {
+    background-color: #37806b;
+    color: #ffffff;
+}
+.testimonial-area .owl-next {
+    margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+    .testimonial-area {
+        text-align: center;
+        padding: 60px 0;
+    }
+    .testimonial-area .section-heading h3 {
+        font-size: 38px;
+    }
+    .all-testimonial {
+        margin-top: 10px;
+    }
+    .icon-img {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .icon-img img {
+        width: 20px !important;
+        height: auto;
+    }
+    .testimonial-area .owl-dots button {
+        height: 15px;
+        width: 15px;
+        background-color: #B0855B;
+        border-radius: 50%;
+        margin-left: 15px;
+    }
+    .testimonial-area .owl-dots button.active {
+        background-color: #37806b;
+    }
+    .design {
+        top: -40px;
+    }
+    .design img {
+        height: 80px;
+    }
+    
 }
 
 /* Footer Area Css */
