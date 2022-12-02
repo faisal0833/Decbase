@@ -155,7 +155,7 @@ h4 {
 @media (max-width: 991px) {
     .hero-area {
         text-align: center;
-        padding-top: 0px;
+        padding-top: 0;
     }
     .hero-area h2 {
         font-size: 48px;
@@ -507,8 +507,8 @@ h4 {
 
 /* Blog Area CSS */
 .blog-area {
-    background-color: #f8f8f8;
     padding: 100px 0;
+    background-color: #f8f8f8;
 }
 .blog-area .section-heading {
     margin-bottom: 70px;
@@ -519,11 +519,14 @@ h4 {
 .blog-text h3 {
     margin-top: 60px;
 }
+.blog-text .theme-button {
+    margin-top: 20px;
+}
 
 @media (max-width: 991px) {
     .blog-area {
         text-align: center;
-        padding: 60px 0;
+        padding: 50px 12px;
     }
     .blog-area .section-heading {
         margin-bottom: 0;
@@ -538,6 +541,9 @@ h4 {
     }
     .blog-text h3 {
         margin-top: 38px;
+    }
+    .blog-text .theme-button {
+        margin-top: 0;
     }
 }
 
