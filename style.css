@@ -40,6 +40,7 @@ h4 {
     z-index: 1;
 }
 .design-image img {
+    width: 100%;
     border-radius: 140px 0;
 }
 .design-image::after {
@@ -148,25 +149,23 @@ h4 {
     margin-top: 15px;
 }
 .hero-image img {
-    width: 100%;
     border-radius: 140px 0;
 }
 
 @media (max-width: 991px) {
     .hero-area {
         text-align: center;
-        padding: 40px;
+        padding-top: 0px;
     }
     .hero-area h2 {
         font-size: 48px;
     }
     .hero-image {
         margin-top: 40px;
-    }
-    .hero-image {
         margin-right: 20px;
     }
 }
+    
 
 /* Service Area CSS */
 .service-area {
@@ -272,7 +271,7 @@ h4 {
         margin-bottom: 20px;
     }
     .about-text h3 {
-        font-size: 40px;
+        font-size: 38px;
     }
     .about-text .theme-button {
         margin-top: 20px;
@@ -300,7 +299,7 @@ h4 {
         padding-top: 0;
     }
     .success-text h3 {
-        font-size: 40px;
+        font-size: 38px;
     }
     .success-text .theme-button {
         margin-bottom: 50px;
@@ -524,6 +523,42 @@ h4 {
         height: 80px;
     }
     
+}
+
+/* Blog Area CSS */
+.blog-area {
+    background-color: #f8f8f8;
+    padding: 100px 0;
+}
+.blog-area .section-heading {
+    margin-bottom: 70px;
+}
+.blog-image {
+    width: 85%;
+}
+.blog-text {
+    margin-top: 40px;
+}
+
+@media (max-width: 991px) {
+    .blog-area {
+        text-align: center;
+        padding: 60px 0;
+    }
+    .blog-area .section-heading {
+        margin-bottom: 0;
+    }
+    .blog-area .section-heading h3 {
+        font-size: 40px;
+    }
+    .blog-image {
+        width: auto;
+        margin-top: 40px;
+        margin-right: 20px;
+    }
+    .blog-text h3 {
+        margin-top: 38px;
+    }
 }
 
 /* Footer Area Css */
