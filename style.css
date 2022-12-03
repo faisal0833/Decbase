@@ -378,23 +378,40 @@ h4 {
         font-size: 38px;
     }
     .single-work-two {
-        margin-bottom: 110px;
+        margin-bottom: 100px;
     }
     .single-work-text::after {
         border-top: none;
         border-right: none;
     }
-    .single-work-text.special::after {
+    /* .single-work-text.special::after {
         border-right: none;
-    }
+    } */
     .single-work-two .single-work-text::before {
         border-top: none;
     }
+    /* .single-work-two .single-work-text::after {
+        position: relative;
+        content: "";
+        height: 100px;
+        width: 65%;
+        border-right: 2px solid #E0E0E0;
+    } */
     .single-work-three .single-work-text::before {
         border-top: none;
         border-left: none;
     }
+    /* .single-work-three .single-work-text::after {
+        position: relative;
+        content: "";
+        padding: none;
+        height: 100px;
+        width: 65%;
+        border-left: 2px solid #E0E0E0;
+        margin-top: 0;
+    } */
 }
+    
 
 /* Testimonial Area CSS */
 .testimonial-area {
@@ -481,13 +498,19 @@ h4 {
     .testimonial-area .section-heading h3 {
         font-size: 38px;
     }
-    .all-testimonial {
+    .testimonial-content {
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 5px;
+    }
+    .testimonial-content::after {
+        left: 0;
+    }
+    .testimonial-text h3 {
         margin-top: 10px;
     }
-    .icon-img {
-        position: absolute;
-        right: 10px;
-        top: 10px;
+    .testimonial-img img {
+        margin-left: 36%;
     }
     .icon-img img {
         width: 20px !important;
