@@ -371,47 +371,44 @@ h4 {
 
 @media (max-width: 991px) {
     .work-area {
-        text-align: center;
-        padding: 50px;
+        padding: 60px 0;
     }
     .work-area .section-heading h3 {
         font-size: 38px;
     }
-    .single-work-two {
-        margin-bottom: 100px;
+    .all-work {
+        margin-top: 35px;
+    }
+    .single-work {
+        margin-bottom: 35px;
     }
     .single-work-text::after {
-        border-top: none;
-        border-right: none;
+        height: 55%;
+        width: 33%;
+        right: -33%;
     }
-    /* .single-work-text.special::after {
-        border-right: none;
-    } */
-    .single-work-two .single-work-text::before {
+    .single-work-text.special::after {
+        left: 100%;
+        top: -30px;
+        height: 66%;
         border-top: none;
+        border-right: 2px solid #e0e0e0;
+        border-bottom: 2px solid #e0e0e0;
     }
-    /* .single-work-two .single-work-text::after {
-        position: relative;
-        content: "";
-        height: 100px;
-        width: 65%;
-        border-right: 2px solid #E0E0E0;
-    } */
     .single-work-three .single-work-text::before {
-        border-top: none;
+        height: 235px;
+        width: 33%;
+        left: 100%;
+        top: -66%;
         border-left: none;
+        border-top: none;
+        border-right: 2px solid #e0e0e0;
+        border-bottom: none;
     }
-    /* .single-work-three .single-work-text::after {
-        position: relative;
-        content: "";
-        padding: none;
-        height: 100px;
-        width: 65%;
-        border-left: 2px solid #E0E0E0;
+    .special {
         margin-top: 0;
-    } */
+    }
 }
-    
 
 /* Testimonial Area CSS */
 .testimonial-area {
